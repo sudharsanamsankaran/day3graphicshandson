@@ -1,0 +1,28 @@
+#rec{
+    background-color: lightgreen;
+}
+#rec2{
+    width: 500px;
+    height: 250px;
+    background: red;
+    position: relative;
+    animation: mymove 5s infinite;
+  }
+  
+  @keyframes mymove {
+    0% {top: 0px;
+    background-image: linear-gradient(yellow,green);}
+    20% {top: 20px;
+    background-image: linear-gradient(blue,pink);}
+    30% {top: 50px;
+        background-image: repeating-linear-gradient(red,yellow,blue);}
+        40% {top: 70px;
+            background-image: radial-gradient(blue,green,yellow);}
+            50% {top: 100px;
+                background-image: repeating-linear-gradient(red,yellow,blue);}
+                60% {top: 155px;
+                    background-image: repeating-radial-gradient(pink,yellow,blue);}
+    70% {top: 200px;
+        background-image: linear-gradient(to right,green,yellow,blue,pink,orange,lime, lightgray,lightpink);
+    }
+  }

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS objects</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Student Details</h1>
+        <h2 id="details"></h2>
+        <script> 
+        const student={name:"sudharsanam", rollnumber:198786, maths:80, scie:97, eng:86};
+        student.studentdetails=function(){
+            return  (this.name+" roll number "+this.rollnumber+" <br>has got total marks "+ `${this.maths+this.scie+this.eng}`);
+        }
+            document.getElementById("details").innerHTML=student.studentdetails();
+        </script>
+        
+    </body>
+</html>

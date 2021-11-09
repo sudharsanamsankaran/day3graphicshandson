@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String variable assign</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    </head>
+    <body>
+        <h1 id="new"></h1>
+        <h2 id="cnt"></h2>
+        <h2 id="new1"></h2>
+        <h2 id="new2"></h2>
+        <h2 id="new3"></h2>
+        <h2 id="new4"></h2>
+        <h2 id="new5"></h2>
+        <h2 id="new6"></h2>
+        <h2 id="new7"></h2>
+
+        <script>
+            let text="It is not abilities that show what we \"truly\" are, it is our choices";
+            let count= text.length;
+            let stxt, qtxt, rtxt, ttxt, utxt, vtxt;
+            stxt=text.slice(10,19);
+            qtxt=text.substring(34,37);
+            rtxt=text.substr(38);
+            document.getElementById("new").innerHTML="statement as follows:<br>"+text;
+            document.getElementById("cnt").innerHTML="Text count:<br>"+count;
+            document.getElementById("new1").innerHTML="slice text:<br>"+stxt;
+            document.getElementById("new2").innerHTML="Substrings:<br>"+qtxt;
+            document.getElementById("new3").innerHTML="final substring:<br>"+rtxt;
+            ttxt=text.replace(stxt,"liabilities");
+            utxt=text.replace(qtxt," they");
+            vtxt=text.replace(rtxt,"     ");
+            document.getElementById("new4").innerHTML="replace the \"abilities\" to:<br>"+ttxt;
+            document.getElementById("new5").innerHTML="replace substring we to they: <br>"+utxt;
+            document.getElementById("new6").innerHTML="replace the final substring with emptyspace:<br>"+vtxt;
+            document.getElementById("new7").innerHTML="Final line:<br>"+vtxt+" "+rtxt;
+
+
+        </script>
+    </body>
+</html>

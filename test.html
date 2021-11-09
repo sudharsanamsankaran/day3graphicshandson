@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Javascript practice</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    </head>
+    <body>
+<h2>JavaScript Practice</h2>
+<p id="add"></p>
+<p id="sub"></p>
+<p id="mul"></p>
+<p id="div"></p>
+<p id="trainee"></p>
+<p id="disp1"></p>
+<p id="car"></p>
+<h2 id="func"></h2>
+<h2 id="dat"></h2>
+<button onclick="displaydatetime()">Click to get Date and Time</button>
+<script>
+    function displaydatetime(){
+        document.getElementById("dat").innerHTML=Date();
+    }
+    const d = new Date(2021, 9,23);
+    const trainee = {Name:"Sudharsanam",Education:"M.Tech in Embedded Systems",Jdate:d,Location:"Trivandrum"};
+    function add2numbers(no1,no2)
+    {
+        let res=no1+no2;
+        return res;
+    }
+    let sum = add2numbers(23,45);
+    document.getElementById("func").innerHTML="total = "+sum;
+let x, y, z, a, b, c; 
+x = 5;        
+y = 6;        
+z = x + y; 
+a = x - y;
+b = x * y;
+c = x / y;
+document.getElementById("trainee").innerHTML ="Details of Trainee:"+trainee.Name+" "+trainee.Education+" "+trainee.Jdate;
+document.getElementById("add").innerHTML ="The value of z is " + z + ".";  
+document.getElementById("sub").innerHTML ="The value for subtraction is "+ a +".";
+document.getElementById("mul").innerHTML = "The value for multiplication is "+ b +".";
+document.getElementById("div").innerHTML = "The value for division is " + c +".";
+const cars = {carname:'Mahindra',price:333300,model:'2021'};
+document.getElementById("car").innerHTML=cars.carname +"/ " +cars.model+"/ " +cars.price;
+
+</script>
+    </body>
+</html>

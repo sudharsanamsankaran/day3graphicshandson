@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+       <h2 id="dtf"></h2>
+       <p id="a1"></p>
+       <script>
+           const employee ={empid:110,empname:"Ranjith",desg:"software Developer",
+           empdetails:function(){
+               return this.empid+" Name is "+this.empname+" Role is "+this.desg;
+           }};
+    let data= employee.empdetails();
+    document.getElementById("dtf").innerHTML=data;
+    const student1=['anand','vignesh','sathish','moorthy'];
+    document.getElementById("a1").innerHTML=student1;
+    </script>
+    </body>
+</html>
